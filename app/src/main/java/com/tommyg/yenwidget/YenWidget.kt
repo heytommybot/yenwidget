@@ -12,7 +12,9 @@ import androidx.glance.action.clickable
 import androidx.glance.appwidget.GlanceAppWidget
 import androidx.glance.appwidget.action.ActionCallback
 import androidx.glance.appwidget.action.actionRunCallback
+import androidx.glance.appwidget.cornerRadius
 import androidx.glance.appwidget.provideContent
+import androidx.glance.background
 import androidx.glance.layout.Alignment
 import androidx.glance.layout.Box
 import androidx.glance.layout.Column
@@ -34,15 +36,19 @@ class YenWidget : GlanceAppWidget() {
     }
 }
 
-private val Dim = Color(0xB3FFFFFF)
-private val Up = Color(0xFF7FD6A2)
+private val Surface = Color(0xFFF3F0EA)
+private val Ink = Color(0xFF1D1D1F)
+private val Dim = Color(0x99000000)
+private val Up = Color(0xFF137333)
 
 @Composable
 private fun WidgetContent(snap: RateRepository.Snapshot) {
     Box(
         modifier = GlanceModifier
             .fillMaxSize()
-            .padding(horizontal = 12.dp, vertical = 8.dp)
+            .background(ColorProvider(Surface))
+            .cornerRadius(28.dp)
+            .padding(horizontal = 16.dp, vertical = 10.dp)
             .clickable(actionRunCallback<RefreshAction>())
     ) {
         Row(
@@ -54,7 +60,7 @@ private fun WidgetContent(snap: RateRepository.Snapshot) {
                     "USD → JPY",
                     style = TextStyle(
                         color = ColorProvider(Dim),
-                        fontSize = 9.sp,
+                        fontSize = 12.sp,
                         fontWeight = FontWeight.Medium,
                         fontFamily = FontFamily.SansSerif
                     )
@@ -62,8 +68,8 @@ private fun WidgetContent(snap: RateRepository.Snapshot) {
                 Text(
                     snap.rate?.let { "¥" + String.format(Locale.US, "%.2f", it) } ?: "—",
                     style = TextStyle(
-                        color = ColorProvider(Color.White),
-                        fontSize = 20.sp,
+                        color = ColorProvider(Ink),
+                        fontSize = 30.sp,
                         fontWeight = FontWeight.Bold,
                         fontFamily = FontFamily.SansSerif
                     )
@@ -77,20 +83,12 @@ private fun WidgetContent(snap: RateRepository.Snapshot) {
                             String.format(Locale.US, "%.2f%%", abs(ch)),
                         style = TextStyle(
                             color = ColorProvider(Up),
-                            fontSize = 11.sp,
+                            fontSize = 15.sp,
                             fontWeight = FontWeight.Medium,
                             fontFamily = FontFamily.SansSerif
                         )
                     )
                 }
-                Text(
-                    snap.updated ?: "tap to load",
-                    style = TextStyle(
-                        color = ColorProvider(Dim),
-                        fontSize = 8.sp,
-                        fontFamily = FontFamily.SansSerif
-                    )
-                )
             }
         }
     }
