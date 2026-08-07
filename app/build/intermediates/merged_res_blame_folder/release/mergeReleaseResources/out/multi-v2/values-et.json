@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.tommyg.yenwidget.app-mergeReleaseResources-31:/values-et/values-et.xml",
+            "map": [
+                {
+                    "source": "/Users/heytommyg/.gradle/caches/8.11.1/transforms/961974b8fb2090528e428b7ee3126280/transformed/glance-appwidget-1.1.1/res/values-et/values-et.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,264,369",
+                        "endColumns": "208,104,121",
+                        "endOffsets": "259,364,486"
+                    },
+                    "to": {
+                        "startLines": "9,10,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "784,993,1098",
+                        "endColumns": "208,104,121",
+                        "endOffsets": "988,1093,1215"
+                    }
+                },
+                {
+                    "source": "/Users/heytommyg/.gradle/caches/8.11.1/transforms/15bd13026d2133e24dfee2a5a1b74ad9/transformed/core-1.12.0/res/values-et/values-et.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,150,252,350,453,559,664,784",
+                        "endColumns": "94,101,97,102,105,104,119,100",
+                        "endOffsets": "145,247,345,448,554,659,779,880"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,12",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,150,252,350,453,559,664,1220",
+                        "endColumns": "94,101,97,102,105,104,119,100",
+                        "endOffsets": "145,247,345,448,554,659,779,1316"
+                    }
+                }
+            ]
+        }
+    ]
+}

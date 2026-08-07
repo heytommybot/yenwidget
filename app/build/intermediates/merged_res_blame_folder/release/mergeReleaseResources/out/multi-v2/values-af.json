@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.tommyg.yenwidget.app-mergeReleaseResources-31:/values-af/values-af.xml",
+            "map": [
+                {
+                    "source": "/Users/heytommyg/.gradle/caches/8.11.1/transforms/15bd13026d2133e24dfee2a5a1b74ad9/transformed/core-1.12.0/res/values-af/values-af.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,255,353,451,558,667,787",
+                        "endColumns": "97,101,97,97,106,108,119,100",
+                        "endOffsets": "148,250,348,446,553,662,782,883"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,12",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,255,353,451,558,667,1213",
+                        "endColumns": "97,101,97,97,106,108,119,100",
+                        "endOffsets": "148,250,348,446,553,662,782,1309"
+                    }
+                },
+                {
+                    "source": "/Users/heytommyg/.gradle/caches/8.11.1/transforms/961974b8fb2090528e428b7ee3126280/transformed/glance-appwidget-1.1.1/res/values-af/values-af.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,259,368",
+                        "endColumns": "203,108,112",
+                        "endOffsets": "254,363,476"
+                    },
+                    "to": {
+                        "startLines": "9,10,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "787,991,1100",
+                        "endColumns": "203,108,112",
+                        "endOffsets": "986,1095,1208"
+                    }
+                }
+            ]
+        }
+    ]
+}

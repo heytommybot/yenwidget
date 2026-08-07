@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.tommyg.yenwidget.app-mergeReleaseResources-31:/values-iw/values-iw.xml",
+            "map": [
+                {
+                    "source": "/Users/heytommyg/.gradle/caches/8.11.1/transforms/15bd13026d2133e24dfee2a5a1b74ad9/transformed/core-1.12.0/res/values-iw/values-iw.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,149,251,348,445,546,646,752",
+                        "endColumns": "93,101,96,96,100,99,105,100",
+                        "endOffsets": "144,246,343,440,541,641,747,848"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,12",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,149,251,348,445,546,646,1186",
+                        "endColumns": "93,101,96,96,100,99,105,100",
+                        "endOffsets": "144,246,343,440,541,641,747,1282"
+                    }
+                },
+                {
+                    "source": "/Users/heytommyg/.gradle/caches/8.11.1/transforms/961974b8fb2090528e428b7ee3126280/transformed/glance-appwidget-1.1.1/res/values-iw/values-iw.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,250,359",
+                        "endColumns": "194,108,129",
+                        "endOffsets": "245,354,484"
+                    },
+                    "to": {
+                        "startLines": "9,10,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "752,947,1056",
+                        "endColumns": "194,108,129",
+                        "endOffsets": "942,1051,1181"
+                    }
+                }
+            ]
+        }
+    ]
+}

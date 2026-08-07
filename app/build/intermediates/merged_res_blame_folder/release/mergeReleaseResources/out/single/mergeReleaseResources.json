@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.tommyg.yenwidget.app-release-33:/drawable_ic_fg.xml.flat",
+        "source": "com.tommyg.yenwidget.app-main-34:/drawable/ic_fg.xml"
+    },
+    {
+        "merged": "com.tommyg.yenwidget.app-release-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.tommyg.yenwidget.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.tommyg.yenwidget.app-release-33:/xml_yen_widget_info.xml.flat",
+        "source": "com.tommyg.yenwidget.app-main-34:/xml/yen_widget_info.xml"
+    }
+]
