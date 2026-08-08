@@ -5,4 +5,6 @@ drawable ic_fg
 mipmap ic_launcher
 string app_name
 string widget_description
+string yamanote_widget_description
+xml yamanote_widget_info
 xml yen_widget_info

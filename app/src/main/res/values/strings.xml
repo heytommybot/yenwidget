@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">Yen Widget</string>
     <string name="widget_description">Live USD to JPY exchange rate</string>
+    <string name="yamanote_widget_description">Yamanote Line service status</string>
 </resources>

@@ -1533,6 +1533,7 @@ int string glance_error_layout_text_v2 0x7f0d000a
 int string glance_error_layout_title 0x7f0d000b
 int string status_bar_notification_info_overflow 0x7f0d000c
 int string widget_description 0x7f0d000d
+int string yamanote_widget_description 0x7f0d000e
 int style Base_Glance_AppWidget_Background 0x7f0e0000
 int style Glance_AppWidget_Background 0x7f0e0001
 int style Glance_AppWidget_Background_Error 0x7f0e0002
@@ -1619,4 +1620,5 @@ int styleable GradientColor_android_endY 11
 int[] styleable GradientColorItem { 0x010101a5, 0x01010514 }
 int styleable GradientColorItem_android_color 0
 int styleable GradientColorItem_android_offset 1
-int xml yen_widget_info 0x7f100000
+int xml yamanote_widget_info 0x7f100000
+int xml yen_widget_info 0x7f100001

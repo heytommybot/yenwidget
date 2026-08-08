@@ -1534,6 +1534,7 @@ string glance_error_layout_text_v2
 string glance_error_layout_title
 string status_bar_notification_info_overflow
 string widget_description
+string yamanote_widget_description
 style Base_Glance_AppWidget_Background
 style Glance_AppWidget_Background
 style Glance_AppWidget_Background_Error
@@ -1581,4 +1582,5 @@ styleable FontFamilyFont android_font android_fontWeight android_fontStyle andro
 styleable GlanceAppWidget glance_isTopLevelLayout
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
+xml yamanote_widget_info
 xml yen_widget_info
