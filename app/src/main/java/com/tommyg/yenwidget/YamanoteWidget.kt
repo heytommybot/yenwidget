@@ -34,7 +34,14 @@ private val Bad = Color(0xFFB3261E)
 
 class YamanoteWidget : GlanceAppWidget() {
     override suspend fun provideGlance(context: Context, id: GlanceId) {
-        val status = TrainRepository.status(context)
+        // provideGlance runs in a worker, so fetch here if we have no data yet —
+        // the widget then loads itself even if scheduled work never fires
+        var status = TrainRepository.status(context)
+        if (status.normal == null) {
+            val ok = TrainRepository.refresh(context)
+            status = if (ok) TrainRepository.status(context)
+            else TrainRepository.Status(null, "can't connect — tap to retry", null)
+        }
         provideContent { TrainContent(status) }
     }
 }
@@ -65,7 +72,7 @@ private fun TrainContent(status: TrainRepository.Status) {
             val normal = status.normal
             Text(
                 when (normal) {
-                    null -> "tap to load"
+                    null -> status.text ?: "loading…"
                     true -> "✓ ${status.text ?: "Normal service"}"
                     false -> "! ${status.text ?: "Disruption"}"
                 },
@@ -77,7 +84,7 @@ private fun TrainContent(status: TrainRepository.Status) {
                             false -> Bad
                         }
                     ),
-                    fontSize = 20.sp,
+                    fontSize = if (normal == null) 14.sp else 20.sp,
                     fontWeight = FontWeight.Bold,
                     fontFamily = FontFamily.SansSerif
                 )

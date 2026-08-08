@@ -8,6 +8,7 @@ class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         RefreshWorker.schedule(this)
+        TrainRefreshWorker.schedule(this)
         val tv = TextView(this).apply {
             text = "Yen Widget\n\n" +
                 "Long-press your home screen → Widgets → Yen Widget, then drag it anywhere.\n\n" +

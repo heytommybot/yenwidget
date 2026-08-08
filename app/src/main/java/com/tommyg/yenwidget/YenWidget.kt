@@ -31,7 +31,11 @@ import kotlin.math.abs
 
 class YenWidget : GlanceAppWidget() {
     override suspend fun provideGlance(context: Context, id: GlanceId) {
-        val snap = RateRepository.snapshot(context)
+        var snap = RateRepository.snapshot(context)
+        if (snap.rate == null) {
+            RateRepository.refresh(context)
+            snap = RateRepository.snapshot(context)
+        }
         provideContent { WidgetContent(snap) }
     }
 }
